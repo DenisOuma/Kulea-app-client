@@ -3,8 +3,8 @@ import { DashBoardTopNavBar } from "../../navigationbar/DashBoardTopNavBar";
 
 export const UserDashboardPriceIndex = () => {
 	return (
-		<div>
-			<DashBoardTopNavBar classname="flex"></DashBoardTopNavBar>
+		<div className="bg-white-900 nv-content-section">
+			<DashBoardTopNavBar />
 		</div>
 	);
 };
