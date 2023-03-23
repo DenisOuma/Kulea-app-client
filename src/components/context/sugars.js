@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useCallback } from "react";
 import axios from "axios";
 
 const SugarContext = createContext();
@@ -6,8 +6,18 @@ const SugarContext = createContext();
 const Provider = ({ children }) => {
 	const [sugars, setSugars] = useState([]);
 
+	const getSugarPrices = useCallback(async () => {
+		try {
+			const { data } = await axios.get("http://localhost:5000/prices");
+			setSugars((prev) => [...data, ...sugars]);
+		} catch (error) {
+			console.log("error");
+		}
+	}, []);
+	console.log(sugars);
 	const sugarsData = {
 		sugars,
+		getSugarPrices,
 	};
 
 	return (

@@ -3,9 +3,8 @@ import React from "react";
 export const DashBoardTopNavBar = ({ children }) => {
 	return (
 		<div className="flex nv-content">
-			{" "}
-			<h1>Price Index</h1>
-			<h1>Avatar</h1>
+			<h1 className="font-extrabold">kulea Africa Price Index</h1>
+			<div className="avatar">HE</div>
 		</div>
 	);
 };
