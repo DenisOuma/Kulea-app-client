@@ -3,8 +3,9 @@ module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
 		extend: {
+			// setting ap my default applications color theme
 			colors: {
-				"kulea-color": "green",
+				"primary-app-them": "#09101D",
 			},
 		},
 	},
