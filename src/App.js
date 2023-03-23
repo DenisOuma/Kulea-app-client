@@ -7,6 +7,9 @@ function App() {
 	console.log(sugars);
 	return (
 		<div className="App">
+			<h1 className="bg-primary-app-color text-3xl font-bold underline ">
+				Hello world!
+			</h1>
 			<UserDashboardPriceIndex />
 		</div>
 	);
