@@ -1,11 +1,12 @@
 import { UserDashboardPriceIndex } from "./components/pages/dashboardpage/UserDashboardPriceIndex";
+import useSugarsContext from "./components/hooks/use-sugars-context";
 
 function App() {
+	const { sugars } = useSugarsContext();
+
+	console.log(sugars);
 	return (
 		<div className="App">
-			<h1 className="bg-primary-app-them">
-				Hello Welcome to Kulea application
-			</h1>
 			<UserDashboardPriceIndex />
 		</div>
 	);

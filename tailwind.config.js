@@ -5,7 +5,8 @@ module.exports = {
 		extend: {
 			// setting ap my default applications color theme
 			colors: {
-				"primary-app-them": "#09101D",
+				"primary-app-color": "#09101D",
+				"dashboard-app-color": "#F3F2EF",
 			},
 		},
 	},
