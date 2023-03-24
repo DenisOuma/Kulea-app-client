@@ -32,6 +32,7 @@ const Provider = ({ children }) => {
 		sugars,
 		getSugarPrices,
 		getLatestSugarPrice,
+		latestPrice,
 	};
 
 	return (

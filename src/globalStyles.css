@@ -43,7 +43,7 @@ svg {
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border-radius: 5px;
-	margin-top: 6rem;
+	margin-top: 1rem;
 }
 
 .table-container {
@@ -67,4 +67,38 @@ svg {
 	background-color: #f2f2f2;
 	color: #333;
 	font-weight: bold;
+}
+.option-container {
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+/* styling the select input option
+ */
+.filter-select-container {
+	display: inline-block;
+	position: relative;
+}
+
+.filter-select {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 8px;
+	font-size: 16px;
+	width: 200px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.filter-select:focus {
+	outline: none;
+	border-color: skyblue;
+}
+
+.filter-select-container::after {
+	content: "▼";
+	position: absolute;
+	top: 20%;
+	right: 10px;
 }
