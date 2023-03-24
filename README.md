@@ -47,7 +47,6 @@ Open your web browser and navigate to http://localhost:3000.
 ## Endpoints
 
     GET /prices - Retrieves all sugar prices in the database
-    GET /prices/:country - Retrieves sugar prices for a specific country
     GET /prices/:country - Retrieves the latest sugar price for a specific country
 
 ## Filter Option
