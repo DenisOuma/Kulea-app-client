@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+## About The Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sugar Price Tracker
 
-## Available Scripts
+## Authors Name
 
-In the project directory, you can run:
+    Denis Ouma Otieno
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [General info](#generalinfo)
+- [Features](#Features)
+- [Technologies Used](#TechnologiesUsed)
+- [Getting Started](#GettingStarted)
+- [API Endpoints](#APIEndpoints)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [License](#License)
 
-### `npm test`
+## General info
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a web application that displays the latest sugar prices for various countries. It was built using React and TailwindCSS.
 
-### `npm run build`
+## Tecknologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was built using the following dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    1. React: A JavaScript library for building user interfaces
+    2. Axios: A library for making HTTP requests
+    3. tailwindCSS (styling the application)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+    View the latest sugar prices for different countries
+    Filter the results by country
+    Sort the results by price or date
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this application on your local machine, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    1. Clone this repository to your local machine.
+    2. Install the dependencies using npm install.
+    3. Start the development server using npm start.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open your web browser and navigate to http://localhost:3000.
 
-## Learn More
+## Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    GET /prices - Retrieves all sugar prices in the database
+    GET /prices/:country - Retrieves sugar prices for a specific country
+    GET /prices/:country - Retrieves the latest sugar price for a specific country
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Filter Option
 
-### Code Splitting
+The API also includes a filter option to allow users to filter sugar prices by country. To use the filter option, make a GET request to /prices with the country query parameter set to the desired country.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions to this project are welcome. To contribute, fork the repository and create a pull request with your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Company
 
-### Making a Progressive Web App
+<img src="./src/images/kulea.svg" width="900px"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Preview
 
-### Advanced Configuration
+## List of countries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="./src/images/Screenshot from 2023-03-24 10-54-35.png" width="900px"/>
 
-### Deployment
+## Selecting option
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img src="./src/images/Screenshot from 2023-03-24 10-55-05.png" width="900px"/>
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./src/images/Screenshot from 2023-03-24 10-55-36.png" width="900px"/>
