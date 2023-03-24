@@ -17,6 +17,7 @@ export const SugarPricesTable = ({ sugars }) => {
 
 	return (
 		<div className="container">
+			<h1 className="country-lable">Sugar Prices</h1>
 			<table className="table">
 				<thead>
 					<tr>

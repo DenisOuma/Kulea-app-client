@@ -70,7 +70,7 @@ svg {
 }
 .option-container {
 	margin: 0 auto;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 /* styling the select input option
@@ -101,4 +101,7 @@ svg {
 	position: absolute;
 	top: 20%;
 	right: 10px;
+}
+.country-lable {
+	padding: 10px;
 }

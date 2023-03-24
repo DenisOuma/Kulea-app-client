@@ -30,7 +30,7 @@ export const SelectCountry = () => {
 					</select>
 				</div>
 			</div>
-			<h1>Latest Sugar Price for {select}</h1>
+			<h1>Latest Sugar Price for: {select}</h1>
 			<SugarPricesTable sugars={latestPrice} />
 		</div>
 	);

@@ -11,6 +11,7 @@ export const UserDashboardPriceIndex = () => {
 			<DashBoardTopNavBar />
 			<div className="table-container">
 				<SelectCountry />
+				<br />
 				<SugarPricesTable sugars={sugars} />
 			</div>
 		</div>
