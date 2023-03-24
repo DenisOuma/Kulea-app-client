@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styling of all the svg */
 svg {
 	height: 30px;
 	font-size: 10px;

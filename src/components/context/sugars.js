@@ -7,6 +7,7 @@ const Provider = ({ children }) => {
 	const [sugars, setSugars] = useState([]);
 	const [latestPrice, setLatesPrice] = useState([]);
 
+	// getting Latest sugar prices for all countries
 	const getSugarPrices = useCallback(async () => {
 		try {
 			const { data } = await axios.get("http://localhost:5000/prices");
@@ -17,6 +18,7 @@ const Provider = ({ children }) => {
 	}, []);
 	console.log(sugars);
 
+	// getting the latest sugar price for a given country.
 	const getLatestSugarPrice = async (country) => {
 		try {
 			const { data } = await axios.get(
@@ -28,6 +30,8 @@ const Provider = ({ children }) => {
 		}
 	};
 	console.log(latestPrice);
+
+	// data to be shared
 	const sugarsData = {
 		sugars,
 		getSugarPrices,

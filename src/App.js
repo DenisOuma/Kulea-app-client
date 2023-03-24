@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 function App() {
 	const { getSugarPrices } = useSugarsContext();
+	// on page load get all the sugar prices from diffrent country
 	useEffect(() => {
 		getSugarPrices();
 	}, [getSugarPrices]);

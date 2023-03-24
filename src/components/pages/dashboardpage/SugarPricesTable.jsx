@@ -1,5 +1,6 @@
 import React from "react";
 export const SugarPricesTable = ({ sugars }) => {
+	// mapping the array data of sugar to the table
 	const tableData = sugars.map((sugar, index) => {
 		const quantity = sugar.quantity.replace(/kg/gi, "");
 		const name = sugar.sugar_name.replace(/[-\d]+kg/gi, "").trim();
